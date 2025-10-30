@@ -1,0 +1,21 @@
+name: 'Link Checker'
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.head.ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  link-checks:
+    uses: zondax/_workflows/.github/workflows/_checks-links.yaml@v3
+    with:
+      package_manager: pnpm
