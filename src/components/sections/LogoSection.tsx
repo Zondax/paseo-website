@@ -1,13 +1,13 @@
 "use client";
 
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import {
 	CONTRIBUTORS,
 	CORE_MAINTAINERS,
 	type Contributor,
 } from "@/constants/contributors";
 import { useThemeFolder } from "@/hooks/useThemeFolder";
-import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
 
 export function LogoSection() {
 	const themeFolder = useThemeFolder();

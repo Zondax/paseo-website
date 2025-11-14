@@ -1,4 +1,4 @@
-import { expect, Locator, test } from "@playwright/test";
+import { expect, type Locator, test } from "@playwright/test";
 import { HomePage } from "./fixtures/HomePage";
 
 test.describe("Navigation and Section Interaction", () => {

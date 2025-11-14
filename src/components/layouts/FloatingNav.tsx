@@ -1,5 +1,7 @@
 "use client";
 
+import { ExternalLink } from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { MobileMenu } from "@/components/layouts/MobileMenu";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import { Button } from "@/components/ui/button";
@@ -11,8 +13,6 @@ import {
 } from "@/constants/navigation";
 import { URLS } from "@/constants/urls";
 import { cn } from "@/lib/utils";
-import { ExternalLink } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
 
 export function FloatingNav() {
 	const [activeSection, setActiveSection] = useState("hero");
