@@ -1,9 +1,9 @@
 "use client";
 
+import { BookOpen, Github, MessageCircle } from "lucide-react";
 import { PrimaryButton } from "@/components/shared/PrimaryButton";
 import { SecondaryButton } from "@/components/shared/SecondaryButton";
 import { COMMUNITY_CONTENT } from "@/constants/content";
-import { BookOpen, Github, MessageCircle } from "lucide-react";
 
 export function CommunitySection() {
 	const iconMap = {

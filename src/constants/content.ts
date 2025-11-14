@@ -82,9 +82,9 @@ interface ComparisonContent {
 		readonly items: readonly {
 			readonly feature: string;
 			readonly link: string | undefined;
-			readonly paseo: boolean;
-			readonly kusama: boolean;
-			readonly polkadot: boolean;
+			readonly paseo: boolean | string;
+			readonly kusama: boolean | string;
+			readonly polkadot: boolean | string;
 		}[];
 	};
 	readonly costs: {
