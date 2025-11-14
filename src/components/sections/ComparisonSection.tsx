@@ -92,7 +92,13 @@ export function ComparisonSection() {
 												</div>
 											</td>
 											<td className="py-4 px-4 md:px-6 text-center">
-												{item.paseo ? (
+												{typeof item.paseo === "string" ? (
+													<div className="flex justify-center items-center min-h-[40px]">
+														<span className="text-sm md:text-base font-medium text-muted-foreground">
+															{item.paseo}
+														</span>
+													</div>
+												) : item.paseo ? (
 													<div className="flex justify-center">
 														<div className="p-2 rounded-full">
 															<Check className="w-5 h-5 text-green-600 dark:text-green-400" />
@@ -107,7 +113,13 @@ export function ComparisonSection() {
 												)}
 											</td>
 											<td className="py-4 px-4 md:px-6 text-center">
-												{item.kusama ? (
+												{typeof item.kusama === "string" ? (
+													<div className="flex justify-center items-center min-h-[40px]">
+														<span className="text-sm md:text-base font-medium text-muted-foreground">
+															{item.kusama}
+														</span>
+													</div>
+												) : item.kusama ? (
 													<div className="flex justify-center">
 														<div className="p-2 rounded-full">
 															<Check className="w-5 h-5 text-green-600 dark:text-green-400" />
@@ -122,7 +134,13 @@ export function ComparisonSection() {
 												)}
 											</td>
 											<td className="py-4 px-4 md:px-6 text-center">
-												{item.polkadot ? (
+												{typeof item.polkadot === "string" ? (
+													<div className="flex justify-center items-center min-h-[40px]">
+														<span className="text-sm md:text-base font-medium text-muted-foreground">
+															{item.polkadot}
+														</span>
+													</div>
+												) : item.polkadot ? (
 													<div className="flex justify-center">
 														<div className="p-2 rounded-full">
 															<Check className="w-5 h-5 text-green-600 dark:text-green-400" />
