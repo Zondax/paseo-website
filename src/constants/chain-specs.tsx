@@ -1,4 +1,4 @@
-import { Database, FileCode, LucideIcon, Server } from "lucide-react";
+import { Database, FileCode, type LucideIcon, Server } from "lucide-react";
 import { URLS } from "./urls";
 
 interface ChainSpec {

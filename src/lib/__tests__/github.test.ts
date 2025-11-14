@@ -3,9 +3,9 @@ import {
 	createRawGitHubUrl,
 	fetchFileContentByPath,
 	fetchRepositoryFiles,
-	getLanguageFromExtension,
 	type GitHubFile,
 	type GitHubRepoConfig,
+	getLanguageFromExtension,
 } from "../github";
 
 describe("github.ts", () => {

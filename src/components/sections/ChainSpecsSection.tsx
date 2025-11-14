@@ -1,7 +1,7 @@
 "use client";
 
-import { CHAIN_SPECS_CONTENT } from "@/constants/chain-specs";
 import { Download } from "lucide-react";
+import { CHAIN_SPECS_CONTENT } from "@/constants/chain-specs";
 
 export function ChainSpecsSection() {
 	return (

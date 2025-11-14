@@ -1,10 +1,10 @@
 "use client";
 
+import { Menu, X } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ISOLATED_NAV_LABELS, type MenuItem } from "@/constants/navigation";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
 
 interface MobileMenuProps {
 	items: readonly MenuItem[];

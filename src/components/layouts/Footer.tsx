@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { FOOTER_CONTENT, type FooterLink } from "@/constants/footer";
 import { URLS } from "@/constants/urls";
 import { useThemeFolder } from "@/hooks/useThemeFolder";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 import { Logo } from "../shared/Logo";
 
 export function Footer() {

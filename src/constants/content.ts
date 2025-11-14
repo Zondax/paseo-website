@@ -82,9 +82,9 @@ interface ComparisonContent {
 		readonly items: readonly {
 			readonly feature: string;
 			readonly link: string | undefined;
-			readonly paseo: boolean;
-			readonly kusama: boolean;
-			readonly polkadot: boolean;
+			readonly paseo: boolean | string;
+			readonly kusama: boolean | string;
+			readonly polkadot: boolean | string;
 		}[];
 	};
 	readonly costs: {
@@ -133,7 +133,7 @@ export const COMPARISON_CONTENT = {
 				link: undefined,
 				paseo: true,
 				kusama: true,
-				polkadot: false,
+				polkadot: true,
 			},
 			{
 				feature: "PolkaVM Contracts",
@@ -146,15 +146,22 @@ export const COMPARISON_CONTENT = {
 				feature: "Contracts: ERC-20 Precompile",
 				link: undefined,
 				paseo: true,
-				kusama: false,
+				kusama: true,
 				polkadot: false,
 			},
 			{
 				feature: "Contracts: XCM Precompile",
 				link: undefined,
 				paseo: true,
-				kusama: false,
+				kusama: true,
 				polkadot: false,
+			},
+			{
+				feature: "Coretime Interlude Period",
+				link: undefined,
+				paseo: "2 days",
+				kusama: "7 days",
+				polkadot: "7 days",
 			},
 		],
 	},
